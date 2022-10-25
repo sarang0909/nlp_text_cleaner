@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/nlp_text_cleaner.py
+src/nlp_text_cleaner.egg-info/PKG-INFO
+src/nlp_text_cleaner.egg-info/SOURCES.txt
+src/nlp_text_cleaner.egg-info/dependency_links.txt
+src/nlp_text_cleaner.egg-info/requires.txt
+src/nlp_text_cleaner.egg-info/top_level.txt
