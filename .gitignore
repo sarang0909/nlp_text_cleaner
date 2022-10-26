@@ -6,6 +6,7 @@
 *log
 
 dist
+*.egg*
 #checkpoint files
 *checkpoint.ipynb
 
