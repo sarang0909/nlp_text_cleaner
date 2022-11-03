@@ -21,7 +21,8 @@ from langdetect import detect
 nltk.download("stopwords")
 # NLTK POS tagger
 nltk.download("averaged_perceptron_tagger")
-
+# Punkt Sentence Tokenizer
+nltk.download("punkt")
 
 def split_into_sentences(text):
     """A method to split text into sentences
@@ -157,17 +158,22 @@ def correct_grammar(text):
     return text
 
 
-def remove_stopwords(text):
+def remove_stopwords(text, custom_stopwords=None):
     """A method to remove stopwords from text
 
     Args:
         text (str): text data
+        custom_stopwords (list): [Optional] A list of custom stopwords to filter
 
     Returns:
         str: text without stopwords
     """
 
     stop = stopwords.words("english")
+
+    if custom_stopwords:
+        stop.extend(custom_stopwords)
+
     text = " ".join([word for word in word_tokenize(text) if word not in (stop)])
     return text
 

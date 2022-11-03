@@ -27,7 +27,7 @@ pip install nlp-text-cleaner
   - **remove_duplicate_whitespaces** : A method to remove  consecutive white spaces
   - **detect_language** : A method to detect language of text
   - **correct_grammar** : A method to correct spelling mistakes in a text    
-  - **remove_stopwords** : A method to remove stopwords from text    
+  - **remove_stopwords** : A method to remove stopwords from text with optional argument to pass our own custom stopwords. 
   - **apply_stemming** : A method to apply stemming on text    
   - **apply_lammatization** : A method to apply lemmatization on text       
   - **remove_hashtags** : A method to remove hashtags in a text    
