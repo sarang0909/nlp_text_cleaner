@@ -1,19 +1,19 @@
-version: 1
+version: 2.1
 jobs:
   build_test:
     docker:
       - image: continuumio/miniconda3
-	  working_directory: ~/code
+    working_directory: ~/code
     steps:
-	  # Step 1: checkout source code to working directory
+    # Step 1: checkout source code to working directory
       - checkout  
-	  # Step 2: create virtual env and install dependencies
+    # Step 2: create virtual env and install dependencies
       - run:
           name: install dependencies
           command: |
             conda env create -f environment.yml
             source activate nlp_text_cleaner
-	  # Step 3: run tests
+    # Step 3: run tests
       - run:
           name: run tests
           command: |
@@ -23,9 +23,9 @@ jobs:
   pypi_publish:
     docker:
       - image: continuumio/miniconda3
-	  working_directory: ~/code
+    working_directory: ~/code
     steps:
-	  # Step 1: checkout source code to working directory
+    # Step 1: checkout source code to working directory
       - checkout
     # Step 2: create virtual env and install dependencies	  
       - run:
@@ -34,7 +34,7 @@ jobs:
             conda env create -f environment.yml
             source activate nlp_text_cleaner
             python -m build
-			      twine check dist/* 
+            twine check dist/* 
             twine upload dist/*
 workflows:
   build_test_publish:
