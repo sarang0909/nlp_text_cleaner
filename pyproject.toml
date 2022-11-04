@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nlp_text_cleaner"
-version = "1.0.3"
+version = "1.0.4"
 description = "Clean the text for NLP project"
 readme = "README.md"
 authors = [{ name = "Sarang Mete", email = "sarang0909.bds@gmail.com" }]
