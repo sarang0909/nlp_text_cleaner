@@ -46,7 +46,7 @@ pip install nlp-text-cleaner
 
 
 ## Contributing     
-Please create a Pull request for any change.     
+Please create a Pull request on 'develop' branch.     
 
 ### Developer Instructions     
 If you are using conda then go to location of environment.yml file and run:       
@@ -67,8 +67,9 @@ pip install -r requirements.txt
   ```
 
 ## Contributors
-<a href = "https://github.com/sarang0909/nlp_text_cleaner/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = sarang0909/nlp_text_cleaner"/>
+<a href="https://github.com/sarang0909/nlp_text_cleaner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sarang0909/nlp_text_cleaner" />
 </a>
+
 
 Made with [contributors-img](https://contrib.rocks).
