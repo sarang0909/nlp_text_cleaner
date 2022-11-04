@@ -42,6 +42,33 @@ pip install nlp-text-cleaner
   - **clean_paragraph_to_sentences** : A default method to get cleaned sentences from a paragraph    
   - **clean_paragraph** : A default method to clean complete paragraph    
   
- 
-## Contributing
-Please create a Pull request for any change. 
+
+
+
+## Contributing     
+Please create a Pull request for any change.     
+
+### Developer Instructions     
+If you are using conda then go to location of environment.yml file and run:       
+```     
+conda env create -f environment.yml     
+```    
+For pip:    
+```    
+pip install -r requirements.txt     
+```     
+
+
+### Unit Testing
+1. Go inside 'tests' folder on command line.
+2. Run:
+  ``` 
+      pytest -vv 
+  ```
+
+## Contributors
+<a href = "https://github.com/sarang0909/nlp_text_cleaner/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = sarang0909/nlp_text_cleaner"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).

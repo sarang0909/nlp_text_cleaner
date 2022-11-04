@@ -24,8 +24,9 @@ nltk.download("averaged_perceptron_tagger")
 # Punkt Sentence Tokenizer
 nltk.download("punkt")
 # Lexical database
-nltk.download('wordnet')
-nltk.download('omw-1.4')
+nltk.download("wordnet")
+nltk.download("omw-1.4")
+
 
 def split_into_sentences(text):
     """A method to split text into sentences

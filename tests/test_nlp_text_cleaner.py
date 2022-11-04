@@ -3,7 +3,7 @@ Module for functional test cases of main script.
 """
 
 
-import nlp_text_cleaner
+from src import nlp_text_cleaner
 
 TEXT = "Tesla is a EV producer.It's based ~~ in Austin.#Tesla <p>Tesla is   fmous</p>"
 
@@ -107,13 +107,13 @@ def test_correct_grammar():
 def test_remove_stopwords():
     """Tests remove_stopwords"""
     clean_text = nlp_text_cleaner.remove_stopwords(TEXT)
-    clean_text_custom_stopwords = nlp_text_cleaner.remove_stopwords(TEXT, ['EV'])
+    clean_text_custom_stopwords = nlp_text_cleaner.remove_stopwords(TEXT, ["EV"])
 
     assert (
         clean_text
         == "Tesla EV producer.It 's based ~~ Austin. # Tesla < p > Tesla fmous < /p >"
-    ) 
-    
+    )
+
     assert (
         clean_text_custom_stopwords
         == "Tesla producer.It 's based ~~ Austin. # Tesla < p > Tesla fmous < /p >"
