@@ -12,7 +12,7 @@ def test_split_into_sentences():
     """Tests split_into_sentences"""
     clean_text = nlp_text_cleaner.split_into_sentences(TEXT)
     assert clean_text == [
-        "esla is a EV producer.It's based ~~ in Austin.#Tesla <p>Tesla is   fmous</p>"
+        "Tesla is a EV producer.It's based ~~ in Austin.#Tesla <p>Tesla is   fmous</p>"
     ]
 
 
@@ -107,9 +107,7 @@ def test_correct_grammar():
 def test_remove_stopwords():
     """Tests remove_stopwords"""
     clean_text = nlp_text_cleaner.remove_stopwords(TEXT)
-    clean_text_custom_stopwords = nlp_text_cleaner.remove_stopwords(
-        TEXT, ["EV"]
-    )
+    clean_text_custom_stopwords = nlp_text_cleaner.remove_stopwords(TEXT, ["EV"])
 
     assert (
         clean_text
