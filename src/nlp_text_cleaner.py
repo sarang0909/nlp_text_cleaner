@@ -29,7 +29,14 @@ nltk.download("omw-1.4")
 
 
 def split_into_sentences(text):
-    
+    """A method to split text into sentences
+
+    Args:
+        text (str): text data
+
+    Returns:
+        list: list of sentences
+    """
     return sent_tokenize(text)
 
 
