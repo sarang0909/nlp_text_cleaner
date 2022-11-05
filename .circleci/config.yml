@@ -15,10 +15,11 @@ jobs:
             source activate nlp_text_cleaner
     # Step 3: run tests
       - run:
-          name: run tests
+          name: run tests and linting
           command: |
             source activate nlp_text_cleaner
             pytest -vv
+            pylint src
   
   pypi_publish:
     docker:
