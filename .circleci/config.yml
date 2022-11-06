@@ -15,11 +15,14 @@ jobs:
             source activate nlp_text_cleaner
     # Step 3: run tests
       - run:
-          name: run tests
+          name: run tests and linting
           command: |
             source activate nlp_text_cleaner
+            pylint src
             pytest -vv
-  
+            pytest --cov-report html:tests/cov_html --cov=src tests/
+      - store_artifacts:
+          path: tests/cov_html
   pypi_publish:
     docker:
       - image: continuumio/miniconda3

@@ -77,7 +77,11 @@ def remove_punctuation(text):
     """
 
     text = " ".join(
-        [word for word in word_tokenize(text) if word not in (string.punctuation)]
+        [
+            word
+            for word in word_tokenize(text)
+            if word not in (string.punctuation)
+        ]
     )
     return text
 
@@ -178,7 +182,9 @@ def remove_stopwords(text, custom_stopwords=None):
     if custom_stopwords:
         stop.extend(custom_stopwords)
 
-    text = " ".join([word for word in word_tokenize(text) if word not in (stop)])
+    text = " ".join(
+        [word for word in word_tokenize(text) if word not in (stop)]
+    )
     return text
 
 
@@ -208,7 +214,9 @@ def apply_lammatization(text):
     """
 
     lemmatizer = WordNetLemmatizer()
-    text = " ".join([lemmatizer.lemmatize(word) for word in word_tokenize(text)])
+    text = " ".join(
+        [lemmatizer.lemmatize(word) for word in word_tokenize(text)]
+    )
     return text
 
 
