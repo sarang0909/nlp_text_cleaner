@@ -2,7 +2,7 @@
 Module for functional test cases of main script.
 """
 
-
+import pytest
 from src import nlp_text_cleaner
 
 TEXT = "Tesla is a EV producer.It's based ~~ in Austin.#Tesla <p>Tesla is   fmous</p>"
@@ -93,6 +93,12 @@ def test_detect_language():
     """Tests detect_language"""
     clean_text = nlp_text_cleaner.detect_language(TEXT)
     assert clean_text == "en"
+
+
+def test_detect_language_exc():
+    """Tests detect_language"""
+    with pytest.raises(Exception):
+        nlp_text_cleaner.detect_language("@!%^")
 
 
 def test_correct_grammar():
