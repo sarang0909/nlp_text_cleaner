@@ -182,9 +182,7 @@ def remove_stopwords(text, custom_stopwords=None):
     if custom_stopwords:
         stop.extend(custom_stopwords)
 
-    text = " ".join(
-        [word for word in word_tokenize(text) if word not in (stop)]
-    )
+    text = " ".join([word for word in word_tokenize(text) if word not in stop])
     return text
 
 
