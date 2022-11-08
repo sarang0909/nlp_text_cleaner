@@ -12,7 +12,7 @@ pip install nlp-text-cleaner
 ## Usage
 
   ``` 
-      import nlp_text_cleaner as cleaner
+      from nlp_text_cleaner import nlp_text_cleaner as cleaner
       cleaned_text = cleaner.apply_stemming("I played Cricket")
   ```
   
