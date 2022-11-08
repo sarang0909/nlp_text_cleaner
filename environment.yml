@@ -19,6 +19,7 @@ dependencies:
     - charset-normalizer==2.1.1
     - colorama==0.4.6
     - commonmark==0.9.1
+    - coverage==6.5.0
     - dill==0.3.6
     - docutils==0.19
     - exceptiongroup==1.0.1
@@ -43,6 +44,7 @@ dependencies:
     - pylint==2.15.5
     - pyparsing==3.0.9
     - pytest==7.2.0
+    - pytest-cov==4.0.0
     - pywin32-ctypes==0.2.0
     - readme-renderer==37.3
     - regex==2022.9.13

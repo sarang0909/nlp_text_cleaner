@@ -27,7 +27,7 @@ dependencies = [
 
 
 [project.optional-dependencies]
-dev = ["black", "pylint", "isort", "pip-tools", "pytest"]
+dev = ["black", "pylint", "isort", "pip-tools", "pytest","pytest-cov"]
 
 [tool.setuptools]
 packages = ["nlp_text_cleaner"]
