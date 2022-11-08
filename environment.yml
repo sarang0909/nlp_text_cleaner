@@ -9,9 +9,6 @@ dependencies:
   - python=3.8.13
   - setuptools=65.5.0
   - sqlite=3.39.3
-  - vc=14.2
-  - vs2015_runtime=14.27.29016
-  - wincertstore=0.2
   - pip:
     - astroid==2.12.12
     - attrs==22.1.0
