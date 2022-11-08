@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nlp_text_cleaner"
-version = "1.0.4"
+version = "1.0.10"
 description = "Clean the text for NLP project"
 readme = "README.md"
 authors = [{ name = "Sarang Mete", email = "sarang0909.bds@gmail.com" }]
@@ -27,10 +27,10 @@ dependencies = [
 
 
 [project.optional-dependencies]
-dev = ["black", "pylint", "isort", "pip-tools", "pytest"]
+dev = ["black", "pylint", "isort", "pip-tools", "pytest","pytest-cov"]
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["nlp_text_cleaner"]
 
 
 

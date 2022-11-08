@@ -3,7 +3,7 @@ Module for functional test cases of main script.
 """
 
 import pytest
-from src import nlp_text_cleaner
+from nlp_text_cleaner import nlp_text_cleaner
 
 TEXT = "Tesla is a EV producer.It's based ~~ in Austin.#Tesla <p>Tesla is   fmous</p>"
 

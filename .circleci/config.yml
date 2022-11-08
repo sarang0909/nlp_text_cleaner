@@ -20,7 +20,7 @@ jobs:
             source activate nlp_text_cleaner
             pylint src
             pytest -vv
-            pytest --cov-report html:tests/cov_html --cov=src tests/
+            pytest --cov-report html:tests/cov_html --cov=nlp_text_cleaner tests/
       - store_artifacts:
           path: tests/cov_html
   pypi_publish:
