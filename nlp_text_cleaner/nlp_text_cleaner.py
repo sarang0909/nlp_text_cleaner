@@ -149,7 +149,7 @@ def detect_language(text):
     return language
 
 
-def correct_grammar(text):
+def correct_spelling(text):
     """A method to correct spelling of a text
 
     Args:

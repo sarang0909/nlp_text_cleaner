@@ -101,9 +101,9 @@ def test_detect_language_exc():
         nlp_text_cleaner.detect_language("@!%^")
 
 
-def test_correct_grammar():
-    """Tests correct_grammar"""
-    clean_text = nlp_text_cleaner.correct_grammar(TEXT)
+def test_correct_spelling():
+    """Tests correct_spelling"""
+    clean_text = nlp_text_cleaner.correct_spelling(TEXT)
     assert (
         clean_text
         == "Tesla is a EV producer.It's based ~~ in Austin.#Tesla <p>Tesla is  famous</p>"
